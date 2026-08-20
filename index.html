@@ -3,9 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Mikko Pylkäs</h1>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <p class="small-text">Hello, I'm</p>
+
+            <h2>Mikko Pylkäs</h2>
+
+            <p class="hero-description">
+                A coding enthusiast interested in creating websites,
+                applications and other digital projects.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+
+            <p>
+                I am passionate about coding and learning new technologies.
+                I enjoy creating projects, solving problems and improving my
+                programming skills.
+            </p>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">PHP</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Git</div>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+
+                <article class="project-card">
+                    <div class="project-number">01</div>
+
+                    <h3>Project One</h3>
+
+                    <p>
+                        A short description of your first project.
+                        Explain what you made and what technologies you used.
+                    </p>
+
+                    <span>HTML · CSS</span>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+
+                    <h3>Project Two</h3>
+
+                    <p>
+                        A short description of your second project.
+                        You can replace this with information about your work.
+                    </p>
+
+                    <span>JavaScript · HTML · CSS</span>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+
+                    <h3>Project Three</h3>
+
+                    <p>
+                        A short description of your third project.
+                        Add details about its purpose and functionality.
+                    </p>
+
+                    <span>PHP · MySQL</span>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Mikko Pylkäs. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
