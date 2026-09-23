@@ -1,128 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikko · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="wrap nav">
+    <a class="brand" href="#top">Mikko</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Mikko</h1>
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow mono">ICT student · Finland</div>
+        <h1>I build things<br>with <em>code</em><span class="cursor">_</span></h1>
+        <p>I'm Mikko, an ICT student learning full-stack development and turning school projects, experiments and questionable ideas into things that actually do something.</p>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View projects ↓</a>
+          <a class="btn" href="https://github.com/esfien" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
 
+        <div class="status">
+          <span class="dot"></span>
+          <span class="mono">currently learning · PHP / React / MySQL</span>
+        </div>
+      </div>
+    </section>
 
-    <main>
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected projects</h2>
+          <p>A few things I've built while learning web development.</p>
+        </div>
 
-        <!-- Hero -->
-        <section class="hero">
-            <p class="small-text">Hello, I'm</p>
-
-            <h2>Mikko</h2>
-
-            <p class="hero-description">
-                A coding enthusiast interested in creating websites,
-                applications and other digital projects.
-            </p>
-
-            <a href="#projects" class="button">View My Projects</a>
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
-
-            <p>
-                I am passionate about coding and learning new technologies.
-                I enjoy creating projects, solving problems and improving my
-                programming skills.
-            </p>
-        </section>
-
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-
-            <div class="skills-container">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">PHP</div>
-                <div class="skill">MySQL</div>
-                <div class="skill">Git</div>
+        <div class="grid">
+          <article class="card">
+            <span class="num">01 / FULL STACK</span>
+            <h3>Roolipelisovellus</h3>
+            <p>A simple D&D-style role-playing web app with accounts, characters, campaigns and editable character data.</p>
+            <div class="tags">
+              <span class="tag">PHP</span><span class="tag">MVC</span><span class="tag">PDO</span><span class="tag">MySQL</span>
             </div>
-        </section>
-
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-
-            <div class="projects-container">
-
-                <article class="project-card">
-                    <div class="project-number">01</div>
-
-                    <h3>Project One</h3>
-
-                    <p>
-                        A short description of your first project.
-                        Explain what you made and what technologies you used.
-                    </p>
-
-                    <span>HTML · CSS</span>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">02</div>
-
-                    <h3>Project Two</h3>
-
-                    <p>
-                        A short description of your second project.
-                        You can replace this with information about your work.
-                    </p>
-
-                    <span>JavaScript · HTML · CSS</span>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">03</div>
-
-                    <h3>Project Three</h3>
-
-                    <p>
-                        A short description of your third project.
-                        Add details about its purpose and functionality.
-                    </p>
-
-                    <span>PHP · MySQL</span>
-                </article>
-
+            <div class="card-links">
+              <p>Sadly no demo.</p>
             </div>
-        </section>
+          </article>
 
-    </main>
+          <article class="card">
+            <span class="num">02 / JAVASCRIPT</span>
+            <h3>Recipe Project</h3>
+            <p>A web project focused on building an interactive recipe experience and practicing front-end JavaScript.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+            <div class="card-links">
+              <a href="https://reseptipankki.mikpyl25.treok.io/" target="_blank" class="project-link">Check it out →</a>
+            </div>
+          </article>
 
+          <article class="card">
+            <span class="num">03 / WEB</span>
+            <h3>Review Website</h3>
+            <p>A website for reviewing movies, books, games and other media, with a place to share ratings and opinions.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+            <div class="card-links">
+                <a href="https://arvostelusivu.mikpyl25.treok.io/" target="_blank" class="project-link">Check it out →</a>
+            </div>
+          </article>
 
-    <footer>
-        <p>© 2026 Mikko. All rights reserved.</p>
-    </footer>
+          <article class="card">
+            <span class="num">04 / WEB</span>
+            <h3>This Portfolio</h3>
+            <p>A portfolio to document what I'm learning and give future projects somewhere to live.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <div class="eyebrow mono">01 · About</div>
+          <h2>Still learning.<br>Still building.</h2>
+          <p>I'm an 18 year old ICT student in Finland interested in web development and programming. I like projects where I can build something from scratch, break it, figure out why it broke, and eventually make it work.</p>
+          <p>This portfolio is intentionally simple. The projects are the main character.</p>
+        </div>
+
+        <div class="facts">
+          <div class="fact"><small>Focus</small><strong>Web development</strong></div>
+          <div class="fact"><small>Currently</small><strong>ICT studies</strong></div>
+          <div class="fact"><small>From</small><strong>Finland 🇫🇮</strong></div>
+          <div class="fact"><small>Tools</small><strong>VS Code · Git</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Toolbox</h2>
+            <p>The stuff I've been working with so far.</p>
+          </div>
+      
+          <div class="skills">
+            <span class="skill">PHP</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">React</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">PDO</span>
+            <span class="skill">MVC</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Jest</span>
+            <span class="skill">VS Code</span>
+          </div>
+      
+          <div class="language-block">
+            <div class="language-title">
+              <span class="eyebrow mono">Languages</span>
+              <span class="language-note">spoken</span>
+            </div>
+      
+            <div class="skills language-list">
+              <span class="skill">🇫🇮 Finnish</span>
+              <span class="skill">🇬🇧 English</span>
+              <span class="skill">🇪🇸 Spanish</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact">
+      <div class="wrap contact">
+        <div>
+          <div class="eyebrow mono">02 · Contact</div>
+          <h2>Get in touch.</h2>
+        </div>
+
+        <div class="buttons">
+          <a class="btn primary" href="https://github.com/esfien" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© 2026 Mikko</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
